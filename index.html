@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Impossible Grid</title>
+
+  <!-- Minimal, system-first typography -->
+  <style>
+    :root {
+      --max-width: 900px;
+      --line: 1px solid #000;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Helvetica, Arial, sans-serif;
+      color: #000;
+      background: #fff;
+      line-height: 1.5;
+    }
+
+    main {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 4rem 1.5rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 4rem;
+    }
+
+    header {
+      display: grid;
+      gap: 1rem;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      margin: 0;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      max-width: 32rem;
+    }
+
+    section {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .divider {
+      border-top: var(--line);
+      width: 100%;
+    }
+
+    .maze-preview {
+      width: 100%;
+      border: var(--line);
+      aspect-ratio: 1 / 1;
+      display: grid;
+      place-items: center;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .meta {
+      font-size: 0.85rem;
+      color: #444;
+      max-width: 36rem;
+    }
+
+    .links {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      font-size: 0.95rem;
+    }
+
+    .links a {
+      text-decoration: none;
+      color: #000;
+      border-bottom: var(--line);
+      padding-bottom: 2px;
+    }
+
+    .links a:hover {
+      opacity: 0.6;
+    }
+
+    footer {
+      margin-top: 6rem;
+      font-size: 0.8rem;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1>The Impossible Grid</h1>
+      <p class="subtitle">
+        A series of black-and-white optical mazes exploring structure,
+        perspective, and variation within a strict grid.
+      </p>
+    </header>
+
+    <div class="divider"></div>
+
+    <section>
+      <h2>Maze No. 01</h2>
+
+      <!-- Replace this div with an image when ready -->
+      <div class="maze-preview">
+        Maze preview placeholder
+      </div>
+
+      <p class="meta">
+        Hand-drawn and digitally refined. Designed to be solvable,
+        visually absorbing, and formally constrained.
+      </p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
+      <h2>Links</h2>
+      <div class="links">
+        <a href="https://gumroad.com/theimpossiblegrid" target="_blank">
+          Gumroad
+        </a>
+        <a href="https://instagram.com/theimpossiblegrid" target="_blank">
+          Instagram
+        </a>
+        <a href="mailto:theimpossiblegrid@gmail.com">
+          Contact
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      © 2025 The Impossible Grid · Iliana Flohr
+    </footer>
+  </main>
+</body>
+</html>
