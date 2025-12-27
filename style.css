@@ -13,13 +13,14 @@ header {
 }
 
 h1 {
-    font-weight: 700;
+    font-weight: 300;       /* Light weight for "THE IMPOSSIBLE" */
     letter-spacing: 5px;
     margin-bottom: 5px;
+    text-transform: uppercase;
 }
 
 h1 span {
-    font-weight: 300;
+    font-weight: 700;       /* Bold weight for "GRID" */
 }
 
 .tagline {
