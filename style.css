@@ -153,6 +153,18 @@ footer {
     padding: 80px 20px;
     font-size: 0.7rem;
     letter-spacing: 1px;
-    color: #ccc;
+    color: #ccc; /* Main footer text color */
     text-transform: uppercase;
+}
+
+footer a {
+    color: #aaa;           /* Subtle grey for the link */
+    text-decoration: none; /* Removes the underline */
+    font-weight: 700;      /* Slightly bolder so it's still findable */
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #333;           /* Turns dark grey/black when hovered */
+    text-decoration: none; /* Keeps the underline off even on hover */
 }
