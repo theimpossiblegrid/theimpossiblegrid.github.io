@@ -12,6 +12,20 @@ header {
     padding: 60px 20px;
 }
 
+/* Styling the divider line */
+.header-divider {
+    border: 0;
+    height: 1px;
+    background: #eeeeee; /* Light grey for a subtle look */
+    width: 100px;        /* Keeping the line short and centered */
+    margin: 0 auto 40px auto; /* Centers it and adds space before the buttons */
+}
+
+/* Adjust the logo margin since we now have a line and its margins */
+.logo-container {
+    margin-bottom: 40px; 
+}
+
 h1 {
     font-weight: 300;       /* Light weight for "THE IMPOSSIBLE" */
     letter-spacing: 5px;
