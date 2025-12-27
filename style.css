@@ -1,128 +1,111 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General Styles */
 body {
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
     background-color: #ffffff;
-    color: #1a1a1a;
-    line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-}
-
-/* Header & Logo */
-header {
-    padding: 80px 20px;
+    color: #333;
     text-align: center;
 }
 
+header {
+    padding: 60px 20px;
+}
+
 h1 {
-    font-weight: 300;
-    letter-spacing: 12px;
-    font-size: 2rem;
-    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    margin-bottom: 5px;
 }
 
 h1 span {
-    font-weight: 700;
-    letter-spacing: 2px;
+    font-weight: 300;
 }
 
 .tagline {
     font-size: 0.9rem;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    letter-spacing: 4px;
     color: #888;
 }
 
-/* Gallery Section */
+/* Gallery Grid */
 .grid-container {
-    max-width: 1000px;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
-}
-
-.maze-card {
-    text-align: center;
-    padding: 20px;
-    border: 1px solid #eee;
-    transition: 0.3s ease;
-}
-
-.maze-card:hover {
-    border-color: #000;
-}
-
-.placeholder-img {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    background-color: #f4f4f4;
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    font-weight: 300;
-    color: #ccc;
+    gap: 40px;
+    padding: 40px 20px;
+    flex-wrap: wrap; /* Allows cards to stack on mobile */
 }
 
-/* Button */
-.cta-button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px;
-    background-color: #1a1a1a;
-    color: #fff;
-    text-decoration: none;
-    font-size: 0.8rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    transition: 0.3s;
-}
-
-.cta-button:hover {
-    background-color: #444;
+/* Maze Card Structure */
+.maze-card {
+    width: 320px;
+    padding: 20px;
+    transition: transform 0.3s ease;
 }
 
 .maze-image-wrapper {
-    width: 100%;
     margin-bottom: 20px;
-    border: 1px solid #eee;
-    line-height: 0; /* Removes extra gap under image */
-    overflow: hidden;
 }
 
 .maze-thumb {
-    width: 100%;
-    height: auto;
+    height: auto; /* Keeps proportions correct */
     display: block;
-    transition: transform 0.5s ease;
+    margin: 0 auto;
+    border: 1px solid #eeeeee;
 }
 
-/* Subtle zoom effect when hovering over the card */
-.maze-card:hover .maze-thumb {
-    transform: scale(1.05);
+/* Coming Soon Styling */
+.coming-soon {
+    opacity: 0.6;
+}
+
+.coming-soon-box {
+    width: 300px;
+    height: 380px; /* Matches the approximate height of your No. 1 image */
+    background: #fdfdfd;
+    border: 2px dashed #dddddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px auto;
+}
+
+.coming-soon-box span {
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    color: #aaa;
+}
+
+/* Buttons */
+.cta-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: none;
+}
+
+.cta-button.disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
 }
 
 /* Footer */
 footer {
-    margin-top: auto;
     padding: 40px;
     font-size: 0.8rem;
-    color: #aaa;
+    color: #bbb;
 }
 
 footer a {
-    color: #1a1a1a;
+    color: #888;
     text-decoration: none;
-    font-weight: 700;
+    border-bottom: 1px solid #ddd;
 }
