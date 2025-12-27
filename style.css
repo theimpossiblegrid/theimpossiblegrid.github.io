@@ -146,6 +146,23 @@ footer a {
     font-weight: 700;
 }
 
+/* Adds space between the Title/Tagline and the Navigation Buttons */
+.logo-container {
+    margin-bottom: 60px; /* Increase this number for even more space */
+}
+
+/* Ensure the nav itself doesn't hug the content below it too tightly */
+.main-nav {
+    margin-bottom: 50px; 
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+
+
+
 /* About Page Layout */
 .about-content {
     max-width: 600px;
