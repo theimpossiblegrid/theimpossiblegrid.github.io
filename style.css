@@ -14,7 +14,7 @@ header {
 
 /* --- Branding & Logo --- */
 .logo-container {
-    /* Large negative space between Logo and Navigation */
+    /* Large negative space (Double space) between Logo and Nav */
     margin-bottom: 120px; 
 }
 
@@ -36,35 +36,33 @@ h1 span {
     color: #aaa;
 }
 
-/* --- Navigation Buttons --- */
+/* --- Minimalist Navigation (Underline Style) --- */
 .main-nav {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 30px; /* Space between links */
     margin-bottom: 60px;
 }
 
 .main-nav a {
     text-decoration: none;
-    color: #000;
+    color: #999;           /* Muted color for inactive links */
     text-transform: uppercase;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     letter-spacing: 2px;
-    padding: 12px 24px;
-    border: 1px solid #000;
-    border-radius: 2px; /* Sharp, architectural corners */
+    padding-bottom: 6px;   /* Space for the underline */
+    border-bottom: 1px solid transparent; /* Keeps things stable */
     transition: all 0.3s ease;
-    background-color: transparent;
 }
 
 .main-nav a:hover {
-    background-color: #000;
-    color: #fff;
+    color: #000;
+    border-bottom: 1px solid #000;
 }
 
 .main-nav a.active {
-    background-color: #000;
-    color: #fff;
+    color: #000;           /* Active page is black */
+    border-bottom: 1px solid #000; /* Subtle underline */
 }
 
 /* --- Gallery Grid --- */
@@ -90,7 +88,7 @@ h1 span {
 }
 
 .maze-card:hover .maze-thumb {
-    transform: translateY(-5px); /* Subtle lift on hover */
+    transform: translateY(-5px);
 }
 
 /* --- Coming Soon States --- */
@@ -131,7 +129,7 @@ h1 span {
     font-weight: 300;
 }
 
-/* --- UI Elements --- */
+/* --- Buttons --- */
 .cta-button {
     display: inline-block;
     margin-top: 25px;
