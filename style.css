@@ -112,25 +112,38 @@ footer a {
 
 
 
-
 /* Navigation */
 .main-nav {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between buttons */
 }
 
 .main-nav a {
     text-decoration: none;
-    color: #999;
+    color: #333;
     text-transform: uppercase;
-    font-size: 0.7rem;
-    letter-spacing: 2px;
-    margin: 0 15px;
-    padding-bottom: 5px;
+    font-size: 0.75rem;
+    letter-spacing: 1.5px;
+    padding: 10px 20px;
+    border: 1px solid #000; /* Thin black border */
+    border-radius: 4px;    /* Subtle rounded corners */
+    transition: all 0.3s ease;
+    background-color: transparent;
 }
 
+/* Hover effect: Fills the button with black */
+.main-nav a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Active button: Shows which page you are on */
 .main-nav a.active {
-    color: #000;
-    border-bottom: 1px solid #000;
+    background-color: #000;
+    color: #fff;
+    font-weight: 700;
 }
 
 /* About Page Layout */
