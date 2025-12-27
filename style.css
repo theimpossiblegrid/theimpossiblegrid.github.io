@@ -115,7 +115,7 @@ footer a {
 
 /* Navigation */
 .main-nav {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     display: flex;
     justify-content: center;
     gap: 15px; /* Space between buttons */
@@ -150,14 +150,6 @@ footer a {
 /* Adds space between the Title/Tagline and the Navigation Buttons */
 .logo-container {
     margin-bottom: 60px; /* Increase this number for even more space */
-}
-
-/* Ensure the nav itself doesn't hug the content below it too tightly */
-.main-nav {
-    margin-bottom: 50px; 
-    display: flex;
-    justify-content: center;
-    gap: 15px;
 }
 
 
