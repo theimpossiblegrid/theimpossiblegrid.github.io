@@ -93,6 +93,26 @@ h1 span {
     background-color: #444;
 }
 
+.maze-image-wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+    line-height: 0; /* Removes extra gap under image */
+    overflow: hidden;
+}
+
+.maze-thumb {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+/* Subtle zoom effect when hovering over the card */
+.maze-card:hover .maze-thumb {
+    transform: scale(1.05);
+}
+
 /* Footer */
 footer {
     margin-top: auto;
